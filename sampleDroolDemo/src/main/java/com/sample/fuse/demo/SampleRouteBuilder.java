@@ -13,7 +13,7 @@ public class SampleRouteBuilder extends RouteBuilder {
 
 	@Override
 	public void configure() throws Exception {
-		from("direct:start").beanRef("helloBean");
+		from("direct:start").process(new RuleProcessor()).beanRef("helloBean");
 	}
 
 }
