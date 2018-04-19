@@ -1,0 +1,9 @@
+package rules
+
+rule "test"
+ when 
+ 	
+ then
+ 	System.out.println("Wow! Rules running...");
+ end
+ 	
