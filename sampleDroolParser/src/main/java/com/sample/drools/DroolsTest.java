@@ -21,7 +21,7 @@ public class DroolsTest {
 
 	public void executeDrools() throws DroolsParserException, IOException {
 		PackageBuilder packageBuilder = new PackageBuilder();
-		String ruleFile = "/com/rules/droolsRule.drl";
+		String ruleFile = "/com/sample/drools/droolsRule.drl";
 		InputStream resourceAsStream = getClass().getResourceAsStream(ruleFile);
 		Reader reader = new InputStreamReader(resourceAsStream);
 		packageBuilder.addPackageFromDrl(reader);

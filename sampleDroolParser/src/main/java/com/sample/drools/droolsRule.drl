@@ -1,6 +1,5 @@
 package com.sample.drools
 
-import com.example.droolsExample.Person
 rule "Good Morning"
 when
 person: Person(time >= 0, time < 12)
